@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Stanka Nicolson">
+		<link rel="icon" type="image/png" href="favicon.png">
+	</head>
+
+	<body>
+	<h2>Information about post Code</h2>
+	<!--postalCodeSearch-->
+		<label>Country: </label>
+		<select id="selCountry">
+			<option value="GB">GB</option>
+			<option value="US">USA</option>
+		</select>
+		<label>Post Code: <label>
+		<select id="selPostCode">
+			<option value="LS184QH">LS18 4QH</option>
+			<option value="HS12TD">HS1 2TD</option>
+			<option value="E10AA">E1 0AA</option>
+			<option value="EC1A2AA">EC1A 2AA</option>
+			<option value="G511AW">G51 1AW</option>
+			<option value="EH991SP">EH99 1SP</option>
+			<option value="M26DN">M2 6DN</option>
+			<option value="E10AA">E10AA</option>
+			<option value="32817">32817</option>
+			<option value="32401">32401</option>
+			<option value="33060">33060</option>
+			<option value="33142">33142</option>
+			<option value="33604">33604</option>
+			
+			
+		</select>
+
+		<button id="btnRun">Submit</button>
+		
+		<div id="divResult1">
+		<table>
+		<tr>
+			<td align="right">
+				County: 
+			</td>
+			<td id="txtCountry">
+						
+			</td>
+
+		</tr>
+		<tr>
+			<td align="right">
+				Town/City: 
+			</td>
+			<td id="txtCity">
+						
+			</td>
+
+		</tr>
+		
+		</table>
+		<br>
+	<!--findNearbyPostalCodeSearch-->
+	<h2>Find Post Codes near by</h2>
+		<label>Country: </label>
+		<select id="findCountry">
+			<option value="GB">GB</option>
+			<option value="US">USA</option>
+		</select>
+		<label>Post Code: <label>
+		<select id="findPostCode">
+			<option value="LS184QH">LS18 4QH</option>
+			<option value="HS12TD">HS1 2TD</option>
+			<option value="E10AA">E1 0AA</option>
+			<option value="EC1A2AA">EC1A 2AA</option>
+			<option value="G511AW">G51 1AW</option>
+			<option value="EH991SP">EH99 1SP</option>
+			<option value="M26DN">M2 6DN</option>
+			<option value="E10AA">E10AA</option>
+			<option value="32817">32817</option>
+			<option value="32401">32401</option>
+			<option value="33060">33060</option>
+			<option value="33142">33142</option>
+			<option value="33604">33604</option>
+			
+			
+		</select>
+
+		<button id="btnFind">Submit</button>
+		
+		<p id="code1"></p>
+		<p id="code2"></p>
+		<p id="code3"></p>
+		
+	<br>
+	<!--search-->
+	
+	<h2>Search in City/town</h2>
+	
+	<label>City/town:</label>
+		<input type="text" id="townSearch" required />
+		
+		<label>Country: </label>
+		<select id="searchCountry">
+			<option value="US">United States</option>
+			<option value="BG">Bulgaria</option>
+			<option value="FR">France</option>
+		</select>
+		
+		<button id="btnSearch">Run</button>
+		
+		
+
+		</div>
+
+		<script type="application/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="js/script2.js"></script>
+		
+	</body>
+
+</html>
