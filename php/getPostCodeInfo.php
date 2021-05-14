@@ -6,7 +6,7 @@
 	
 	$executionStartTime = microtime(true) / 1000;
 
-	$url='http://api.geonames.org/postalCodeSearchJSON?postalcode='.$_REQUEST['postalcode'] . '&country='.$_REQUEST['country'] .'&maxRows=1&username=stankanic&style=full';
+	$url='http://api.geonames.org/postalCodeSearchJSON?postalcode='.$_REQUEST['postalcode'] . '&country='.$_REQUEST['country'] .'&maxRows=1&username=&style=full';
 
 	
 	$ch = curl_init();
