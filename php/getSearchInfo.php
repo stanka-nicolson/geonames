@@ -5,7 +5,7 @@
 	$executionStartTime = microtime(true) / 1000;
 
 	$url='http://api.geonames.org/searchJSON?formatted=true&name=' . $_REQUEST['name'] . '&country=' 
-	. $_REQUEST['country'] . '&maxRows=1&username=stankanic&style=full';
+	. $_REQUEST['country'] . '&maxRows=1&username=&style=full';
 	
 	echo $url;
 	echo ($_REQUEST['name']);
